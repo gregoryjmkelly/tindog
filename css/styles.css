@@ -21,8 +21,11 @@
 
 /* Landing Page Section */
 
+
 #title {
   background-color: #ff4c68;
+  position: relative;
+
 }
 
 .btncstm {
@@ -32,7 +35,11 @@
 .iphone {
   width: 60%;
   transform: rotate(25deg);
-  margin-left: 3rem;
+  position: absolute;
+  top: 0.1rem;
+  right: 7rem;
+
+
 }
 
 /* Landing Page Section Ends */
@@ -167,4 +174,26 @@ p {
 
 .smicon {
   margin: 1rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 990px) {
+
+  #title {
+  text-align: center;
+  }
+
+  .iphone {
+  transform: rotate(0deg);
+  position: static;
+  vertical-align: middle;
+  }
+}
+
+@media (max-width: 645px) {
+
+  h1 {
+    font-size: 2.5rem;
+  }
 }
